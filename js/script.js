@@ -45,11 +45,10 @@ function Playercharacter(classType) {
     this.attack = 15
 };
 
-function Enemy() {objects
-
-    this.enemytype = "Goblin",
-    this.health = 40,
-    this.attack = 15
+function Enemy() {
+        this.enemytype = "Goblin",
+        this.health = 40,
+        this.attack = 15;
 };
 
 function Dragon() {
