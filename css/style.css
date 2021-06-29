@@ -1,0 +1,24 @@
+
+body {
+    padding: 5px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url("niilo-isotalo--BZc9Ee1qo0-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: bisque;
+}
+ul {
+    border: 1em;
+    color: bisque;
+    margin:5px;
+};
+button {
+    color: teal;
+}
+p {
+    color: bisque;
+}
