@@ -26,25 +26,27 @@ async function dndCharacter() {
         document.querySelector('ul').appendChild(newCharlist);//added newcharlist to parent ul
     }
     //}
-    $("button").click(skillstoCharListBtn);//synAC
+    // function hideOtherClasses()
+    $("button").click(clickClassSelection);//synAC
 }
-function skillstoCharListBtn(event){
-    console.log(event.target.id);
-    const btnName = event.target.id;
-    console.log(btnName);
-    const btnSelector = document.getElementById(btnName);//select button
+function clickClassSelection(event){ //Single out classType
+    const classType = event.target.id;
+    console.log(classType);
+    const btnSelector = document.getElementById(classType);//select button
     console.log(btnSelector);
     //append li to button
     //list as skills from ap 
 };
+let classType;  
 dndCharacter();
-function Playercharacter() {
-    this.charclass = btnName,
+function Playercharacter(classType) {
+    this.classType = classType,
     this.health = 40,
     this.attack = 15
 };
 
-function Enemy() {
+function Enemy() {objects
+
     this.enemytype = "Goblin",
     this.health = 40,
     this.attack = 15
@@ -54,12 +56,19 @@ function Dragon() {
     this.health =  v,//random #700hp -1500hp
     this.attack =  x//random #35-75
 };
-const GameManager = {
-    setGameStart :function () {
+// const GameManager = {
+//     setGameStart : function (classType) {
+//         this.resetPlayer(classType);
+//         this.setPreFight();
+//     },
+//     resetPlayer: function(classType) {
+//         switch (classType) {
+//             case 
+//         };
+//     },
+//     setPreFight : function() {
 
-    },
-    resetPlayer: function() {
-
-    },
-}
-console.log(playerCharacter);
+//     }
+// };
+console.log(Playercharacter);
+console.log(classType);
