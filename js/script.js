@@ -30,16 +30,15 @@ function skillstoCharListBtn(event){
     console.log(btnName);
     const btnSelector = document.getElementById(btnName);//select button
     console.log(btnSelector);
-    return btnName;
-
-
     //append li to button
-    //list as skills from ap
-    
+    //list as skills from ap 
 };
 dndCharacter();
 const playerCharacter = {
-    charclass : `${btnName}`,
+    charclass : //link to selected item fro
+    health = 40,
+    damage = 15,
+    
 
 
 }   
