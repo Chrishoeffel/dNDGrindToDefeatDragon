@@ -1,6 +1,10 @@
 console.log("Sanity Check!")
 let char =0;
 let i = 0;
+let player;
+let enemy;
+let dragon;
+
 
 async function dndCharacter() {
     //e.preventDefault();
@@ -34,12 +38,28 @@ function skillstoCharListBtn(event){
     //list as skills from ap 
 };
 dndCharacter();
-const playerCharacter = {
-    charclass : //link to selected item fro
-    health = 40,
-    damage = 15,
-    
+function Playercharacter() {
+    this.charclass = btnName,
+    this.health = 40,
+    this.attack = 15
+};
 
+function Enemy() {
+    this.enemytype = "Goblin",
+    this.health = 40,
+    this.attack = 15
+};
 
-}   
+function Dragon() {
+    this.health =  v,//random #700hp -1500hp
+    this.attack =  x//random #35-75
+};
+const GameManager = {
+    setGameStart :function () {
+
+    },
+    resetPlayer: function() {
+
+    },
+}
 console.log(playerCharacter);
