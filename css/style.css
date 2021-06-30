@@ -7,22 +7,25 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-}
+};
 div {
     color: goldenrod;
-}
+};
 h1 {
     color: bisque;
-}
+};
 h2 {
     color: bisque;
     text-align: center;
     background-color: forestgreen;
     width: 150px;
-}
+};
 h3 {
     color: hotpink;
-}
+};
+h4 {
+    background-color: rgb(141, 121, 121);
+};
 ul {
     border: 1em;
     color: bisque;
@@ -30,7 +33,7 @@ ul {
 };
 button {
     color: teal;
-}
+};
 p {
     color: bisque;
-}
+};

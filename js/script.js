@@ -63,7 +63,7 @@ function clickClassSelection(event){ //Single out classType
     document.querySelector("body").appendChild(createPlayerInterface);
     // interface(charselection,Enemy);
     const newPlayerHeader = document.createElement("h2");//Playerbtn
-    newPlayerHeader.setAttribute("class", `${classType}`)
+    newPlayerHeader.setAttribute("class", `${classType}`);
     newPlayerHeader.textContent =  charselection.type;
     document.querySelector("body").appendChild(newPlayerHeader);
     const playerHealthStatus = document.createElement("h3");
@@ -74,10 +74,32 @@ function clickClassSelection(event){ //Single out classType
     playerAttackStatus.setAttribute("class", "attack");
     playerAttackStatus.textContent = `Attack: ${charselection.attack}`;
     document.querySelector("body").appendChild(playerAttackStatus);
-    // const createPlayerInterface = document.createElement("div");
-    // createPlayerInterface.setAttribute("class", "Emeny interface");
-    console.log(playerAttackStatus)
-    console.log(charselection.health)
+
+
+    const lineDivider= document.createElement("h4");
+    lineDivider.setAttribute("class", "divider");
+    document.querySelector("body").appendChild(lineDivider);
+
+
+    const enemyInterface = document.createElement("div");
+    enemyInterface.setAttribute("class", "Emeny interface");
+    const enemyselector = new Enemy();
+    console.log(enemyInterface);
+    enemyInterface.textcontent = Enemy.type;
+    const enemyHealthStatus = document.createElement("h3");
+    enemyHealthStatus.setAttribute("class", "Health");
+    enemyHealthStatus.setAttribute("class", "Health");
+    enemyHealthStatus.textContent = `Health: ${enemyInterface.health}`;
+    document.querySelector("body").appendChild(enemyHealthStatus);
+    const enemyAttackStatus = document.createElement("h3");
+    enemyAttackStatus.setAttribute("class", "attack");
+    enemyAttackStatus.textContent = `Attack: ${enemyInterface.attack}`;
+    document.querySelector("body").appendChild(enemyAttackStatus);
+
+
+
+    console.log(playerAttackStatus);
+    console.log(charselection.health);
     // //remove all li items    
     //create new div section
     let rounds = 0; 
