@@ -41,12 +41,7 @@ function removeExtraClasses(classType) {
             document.getElementById(allBtns[btn].id).style.visibility="hidden";
         }
     }
-}
-player = {
-    classType : "",
-    health : 40,   
-    attack : 15
-}
+};
 function displayclass()
 function clickClassSelection(event){ //Single out classType
     event.preventDefault();
