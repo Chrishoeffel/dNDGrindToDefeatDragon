@@ -20,6 +20,9 @@ h2 {
     background-color: forestgreen;
     width: 150px;
 }
+h3 {
+    color: hotpink;
+}
 ul {
     border: 1em;
     color: bisque;

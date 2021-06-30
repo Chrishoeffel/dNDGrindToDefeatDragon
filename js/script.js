@@ -59,21 +59,49 @@ function clickClassSelection(event){ //Single out classType
     $(".charSelection").hide();
     const createPlayerInterface = document.createElement("div");
     createPlayerInterface.setAttribute("class", "player interface");
-    createPlayerInterface.textContent = `After each encounter your ${Playercharacter.type}'s health and attack will inscrease. Good Luck!`
+    createPlayerInterface.textContent = `After each encounter your ${charselection.type}'s health and attack will inscrease. Good Luck!`
     document.querySelector("body").appendChild(createPlayerInterface);
-    
+    // interface(charselection,Enemy);
     const newPlayerHeader = document.createElement("h2");//Playerbtn
-    newPlayerHeader.textContent = Playercharacter.type;
+    newPlayerHeader.setAttribute("class", `${classType}`)
+    newPlayerHeader.textContent =  charselection.type;
     document.querySelector("body").appendChild(newPlayerHeader);
-    //remove all li items   
+    const playerHealthStatus = document.createElement("h3");
+    playerHealthStatus.setAttribute("class", "Health");
+    playerHealthStatus.textContent = `Health: ${charselection.health}`;
+    document.querySelector("body").appendChild(playerHealthStatus);
+    const playerAttackStatus = document.createElement("h3");
+    playerAttackStatus.setAttribute("class", "attack");
+    playerAttackStatus.textContent = `Attack: ${charselection.attack}`;
+    document.querySelector("body").appendChild(playerAttackStatus);
+    // const createPlayerInterface = document.createElement("div");
+    // createPlayerInterface.setAttribute("class", "Emeny interface");
+    console.log(playerAttackStatus)
+    console.log(charselection.health)
+    // //remove all li items    
     //create new div section
-    
+    let rounds = 0; 
 
     //append li to button
     //list as skills from ap 
 };
-//display function
+
+
+function interface(Playercharacter,Enemy) {
+    const newPlayerHeader = document.createElement("h2");//Playerbtn
+    newPlayerHeader.textContent = Playercharacter.type;
+    document.querySelector(".player interface").appendChild(newPlayerHeader);
+    const createPlayerInterface = document.createElement("div");
+    createPlayerInterface.setAttribute("class", "player interface");
+    createPlayerInterface.textContent = `After each encounter your ${Playercharacter.type}'s health and attack will inscrease. Good Luck!`
+    document.querySelector("body").appendChild(createPlayerInterface);
+    
+
+    //remove all li items   
+}
 let classType;  
+
+
 dndCharacter();
 
 class Playercharacter {
