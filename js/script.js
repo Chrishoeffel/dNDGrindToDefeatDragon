@@ -56,11 +56,15 @@ function clickClassSelection(event){ //Single out classType
     // const btnSelector = document.getElementById(classType);//select button
     // console.log(btnSelector);
     // console.log(charClassesArr);
-    $("#charClasses").hide();
+    $(".charSelection").hide();
+    const createPlayerInterface = document.createElement("div");
+    createPlayerInterface.setAttribute("class", "player interface");
+    createPlayerInterface.textContent = `After Each encounter your ${Playercharacter.type}'s Health and Attack will inscrease. Good Luck!`
+    document.querySelector("body").appendChild(createPlayerInterface);
+    
     const newPlayerHeader = document.createElement("h2");//Playerbtn
-    newPlayerHeader.textContent = classType;
+    newPlayerHeader.textContent = Playercharacter.type;
     document.querySelector("body").appendChild(newPlayerHeader);
-    console.log();
     //remove all li items   
     //create new div section
     

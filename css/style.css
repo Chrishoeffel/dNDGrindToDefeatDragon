@@ -8,6 +8,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+div {
+    color: goldenrod;
+}
 h1 {
     color: bisque;
 }
