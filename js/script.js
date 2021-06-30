@@ -42,7 +42,7 @@ function removeExtraClasses(classType) {
         }
     }
 };
-function displayclass()
+//function displayclass();
 function clickClassSelection(event){ //Single out classType
     event.preventDefault();
     const classType = event.target.id;
@@ -57,7 +57,9 @@ function clickClassSelection(event){ //Single out classType
     // console.log(btnSelector);
     // console.log(charClassesArr);
     $("#charClasses").hide();
-    const newPlayerBtn = document.createElement("h2");//Playerbtn
+    const newPlayerHeader = document.createElement("h2");//Playerbtn
+    newPlayerHeader.textContent = classType;
+    document.querySelector("body").appendChild(newPlayerHeader);
     console.log();
     //remove all li items   
     //create new div section
