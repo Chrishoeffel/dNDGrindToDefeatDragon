@@ -59,7 +59,7 @@ function clickClassSelection(event){ //Single out classType
     $(".charSelection").hide();
     const createPlayerInterface = document.createElement("div");
     createPlayerInterface.setAttribute("class", "player interface");
-    createPlayerInterface.textContent = `After Each encounter your ${Playercharacter.type}'s Health and Attack will inscrease. Good Luck!`
+    createPlayerInterface.textContent = `After each encounter your ${Playercharacter.type}'s health and attack will inscrease. Good Luck!`
     document.querySelector("body").appendChild(createPlayerInterface);
     
     const newPlayerHeader = document.createElement("h2");//Playerbtn
