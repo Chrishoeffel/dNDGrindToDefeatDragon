@@ -47,19 +47,23 @@ player = {
     health : 40,   
     attack : 15
 }
+function displayclass()
 function clickClassSelection(event){ //Single out classType
     event.preventDefault();
     const classType = event.target.id;
-    //create playerobject
-    player.classType = classType;
+    console.log(classType);
+    const charselection  = new Playercharacter(classType);
+    Playercharacter.type = classType;
+    console.log(charselection);
+    
     // console.log(Playercharacter.classType)
     // console.log(classType);
     // const btnSelector = document.getElementById(classType);//select button
     // console.log(btnSelector);
     // console.log(charClassesArr);
     $("#charClasses").hide();
-    // const newPlayerBtn = document.createElement("button");//Playerbtn
-    // console.log(charClassesArr);
+    const newPlayerBtn = document.createElement("h2");//Playerbtn
+    console.log();
     //remove all li items   
     //create new div section
     
@@ -72,25 +76,26 @@ let classType;
 dndCharacter();
 
 class Playercharacter {
-    constructor (type,health,attack) {
-    this.type = classType;
+    constructor (type, health, attack) {
+    this.type = type;
     this.health = 40;   
-    this.attack = 15;
+    this.attack = 15;   
+    }
 };
 
 class Enemy {
-    constructor(enemytype, health, attack) {
-        this.enemytype = "Goblin";
-        this.health = 40;
-        this.attack = 15;
-    }
+    constructor (type, health, attack) {
+    this.type = "goblin";
+    this.health = Math.floor((Math.random()*45)+35);
+    this.attack = Math.floor((Math.random()*17)+10);
+    };
 
-};
+}
 
 class Dragon {
     constructor (health,attack) {
-        this.health =  v,//random #700hp -1500hp
-        this.attack =  x//random #35-75
+    this.health =  Math.floor((Math.random()*1500)+700);//random #700hp -1500hp
+    this.attack =  Math.floor((Math.random()*75)+45);//random #35-75
     }
 
 };
