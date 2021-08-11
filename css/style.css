@@ -12,6 +12,10 @@ body {
 div {
     color: goldenrod;
 };
+#fighter {
+    color: goldenrod;
+    border: 1px green;
+}
 h1 {
     color: bisque;
 };
