@@ -4,7 +4,7 @@ body {
     padding: 5px;
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image:url("niilo-isotalo--BZc9Ee1qo0-unsplash.jpg");
+    background-image:url("./images/niilo-isotalo--BZc9Ee1qo0-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +12,47 @@ body {
 div {
     color: goldenrod;
 };
-#fighter {
+.characters {
     color: goldenrod;
     border: 1px green;
+}
+#barbarian {
+    background-image: url("./images/dnd_barbarian.jpeg");
+}
+#bard {
+
+}
+#cleric {
+
+}
+#druid {
+
+}
+
+#fighter {
+
+}
+#monk {
+
+}
+
+#palidan {
+
+}
+#ranger {
+
+}
+#rogue {
+
+}
+#sorcerer {
+
+}
+#warlock {
+
+}
+#wizard {
+
 }
 h1 {
     color: bisque;
